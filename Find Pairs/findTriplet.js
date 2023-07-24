@@ -1,14 +1,14 @@
 // Input: const arr = [12,3, 4, 1, 6, 9];
 //        const sum = 24;
-// output : 12, 3, 9
+// output: 12, 3, 9
 
 // --------------------------------- Approach 1 ----------------------------------
 /**
- * Step 1 : Create a function which will take two argument (arr, sum) and return an array of number
- * Step 2 : Will the traverse the array using 3 loop
- *          i : First loop will run from 0 to length, which will help to get first number
- *          j : Second loop will run from i+1 to length(n-1), which wil help to get second number
- *         k :  Third lopp will run from j+1 to length, which will help to get third number
+ * Step 1: Create a function that will take two arguments (arr, sum) and return an array of number
+ * Step 2: Will the traverse the array using 3 loop
+ *          i: The first loop will run from 0 to length, which will help to get the first number
+ *          j : Second loop will run from i+1 to length(n-1), which will help to get second number
+ *         k: The third loop will run from j+1 to length, which will help to get the third number
  * Step 3 : Will check the condition if arr[i] + arr[j] + arr[k] -s equals to sum
  * Step 4 : Then will return the 3 element [arr[i], arr[j], arr[k]]
  */
@@ -35,14 +35,14 @@ console.log(output_v1);
 // --------------------------------- Approach 2 ----------------------------------
 
 /**
- * Step 1 : Create a function which will take two argument (arr, sum) and return an array of number
- * Step 2: Will creating new object which is having values as the element of the giving array
- * Step 3 : In this approach will run only 2 loops to traverse the array (instead of 3 loop in previous approach)
- *          i : First loop will run from 0 to length, which will help to get first number & deleting that element from the object
+ * Step 1: Create a function that will take two arguments (arr, sum) and return an array of number
+ * Step 2: Will creating new object which is having values as the element of the given array
+ * Step 3 : In this approach will run only 2 loops to traverse the array (instead of 3 loop in the previous approach)
+ *          i : The first loop will run from 0 to length, which will help to get first number & deleting that element from the object
  *          j : Second loop will run from i+1 to length(n-1), which wil help to get second number & deleting that element from the object
- * Step 4 : Now wil add arr[i] + arr[j] and subtract that from sum and store in new variable (leftSum)
- * Step 5: To get the third number will check if the leftSum is present in the object
- * Step 6 : If it is present, then will return the 3 element [arr[i], arr[j], leftSum]
+ * Step 4: Now will add arr[i] + arr[j] and subtract that from sum and store in a new variable (leftSum)
+ * Step 5: To get the third number will check if the leftsum is present in the object
+ * Step 6 : If it is present, then will return the 3 elements [arr[i], arr[j], leftSum]
  */
 
 function findTriplet_v2(arr, sum) {
