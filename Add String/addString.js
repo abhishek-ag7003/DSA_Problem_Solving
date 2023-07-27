@@ -9,7 +9,7 @@
  */
 
 const num1 = '456';
-const num2 = '77'
+const num2 = '123'
 
 function addString(num1, num2){
     let result = "";
