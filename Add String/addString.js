@@ -20,7 +20,7 @@ function addString(num1, num2) {
     let stringSum = 0;
     let carryAdd = 0;
     if (num1[num1.length - i]) {
-      if (num2[num2.length - i] ) {
+      if (num2[num2.length - i]) {
         stringSum = +num1[num1.length - i] + +num2[num2.length - i];
         if (carry != 0) {
           stringSum = stringSum + carry;
@@ -59,8 +59,8 @@ function addString(num1, num2) {
       result = stringSum + result;
     }
   }
-  if(carry != 0){
-    result = carry+result;
+  if (carry != 0) {
+    result = carry + result;
   }
   return result;
 }
